@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>LAB_2</title>
+</head>
+<body>
+<h2>1. Завантаження файлу</h2>
+<form action="process.php" method="post" enctype="multipart/form-data">
+    <label>Оберіть файл для завантаження:</label>
+    <input type="file" name="uploadedFile" required><br><br>
+    <input type="submit" value="Завантажити">
+</form>
+
+<hr>
+
+<h2>2. Введення тексту</h2>
+<form action="text.php" method="post">
+    <label>Введіть текст для запису у файл:</label><br>
+    <textarea name="textData" rows="5" cols="40" required></textarea><br><br>
+    <input type="submit" value="Записати у файл">
+</form>
+
+<hr>
+
+<h2>3. Перегляд файлів</h2>
+<a href="list.php">Переглянути список завантажених файлів</a>
+</body>
+</html>
